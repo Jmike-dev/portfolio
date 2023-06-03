@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         primary: {
           "teal-green": "#24596D",
-          purple: "#9C69CC",
+          'purple': "#9C69CC",
           "soft-brown": "#D5CABD",
         },
       },
