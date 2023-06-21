@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header-section/header/header.compo
 import { AboutComponent } from './components/header-section/about/about.component';
 import { ProjectsComponent } from './components/body-section/projects/projects.component';
 import { TechnologyTableComponent } from './components/header-section/technology-table/technology-table.component';
+import { ContactsComponent } from './components/footer-section/contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TechnologyTableComponent } from './components/header-section/technology
     HeaderComponent,
     AboutComponent,
     ProjectsComponent,
-    TechnologyTableComponent
+    TechnologyTableComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
