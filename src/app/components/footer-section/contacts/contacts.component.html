@@ -1,1 +1,75 @@
-<p>contacts works!</p>
+<!-- parent div -->
+<div
+  class="flex min-h-screen items-center justify-center bg-primary-teal-green pt-5"
+>
+  <!-- contact div container -->
+  <div
+    class="flex w-full max-w-4xl flex-col space-y-6 rounded-2xl bg-purple-800 p-8 sm:p-12 shadow-lg md:flex-row md:space-x-6 md:space-y-0"
+  >
+    <!-- contact info div container -->
+    <div class="flex flex-col justify-between space-y-8">
+      <div>
+        <h1 class="font-spartan text-3xl font-bold tracking-wide lg:text-5xl">
+          Contact Me
+        </h1>
+        <p class="p-2 text-xl">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae,
+          voluptas praesentium eius quam unde officia architecto cum eaque fugit
+          molestias.
+        </p>
+      </div>
+      <!-- email and number div container -->
+      <div class="flex flex-col space-y-6">
+        <div class="inline-flex items-center space-x-2">
+          <fa-icon [icon]="faPhone" class="text-3xl"></fa-icon>
+          <span class="text-2xl">+254 703 801 725</span>
+        </div>
+        <div class="inline-flex items-center space-x-2">
+          <fa-icon [icon]="faEnvelope" class="text-3xl"></fa-icon>
+          <span class="text-2xl">gmikekamau@gmail.com</span>
+        </div>
+      </div>
+      <!-- icon div -->
+      <div class="flex space-x-4 text-3xl">
+        <a href=""><fa-icon [icon]="faLinkedin"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faGithub"></fa-icon></a>
+      </div>
+    </div>
+    <!-- form div container-->
+    <div class="rounded-xl bg-primary-teal-green p-8 shadow-lg">
+      <!-- form -->
+      <form action="" class="flex flex-col space-y-4">
+        <div class="flex flex-col">
+          <label for="" class="text-sm text-primary-soft-brown">
+            your name</label
+          >
+          <input
+            type="text"
+            class="mt-2 rounded-md bg-teal-500 px-4 py-2 text-black outline-none ring-1 ring-teal-300 focus:ring-2 focus:ring-teal-100"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="" class="text-sm text-primary-soft-brown">
+            your Email</label
+          >
+          <input
+            type="email"
+            class="mt-2 rounded-md bg-teal-500 px-4 py-2 text-black outline-none ring-1 ring-teal-300 focus:ring-2 focus:ring-teal-100"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="" class="text-sm text-primary-soft-brown"> message</label>
+          <textarea
+            type="text"
+            class="mt-2 rounded-md bg-teal-500 px-4 py-2 text-black outline-none ring-1 ring-teal-300 focus:ring-2 focus:ring-teal-100"
+          ></textarea>
+        </div>
+        <button
+          class="inline-block self-end rounded-lg bg-purple-500 px-6 py-2 text-sm font-bold uppercase text-primary-soft-brown duration-300 ease-in-out hover:-translate-y-1 hover:bg-primary-soft-brown hover:text-purple-500 hover:shadow-lg font-spartan"
+        >
+          send message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
