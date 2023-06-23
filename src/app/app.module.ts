@@ -8,6 +8,7 @@ import { AboutComponent } from './components/header-section/about/about.componen
 import { ProjectsComponent } from './components/body-section/projects/projects.component';
 import { TechnologyTableComponent } from './components/header-section/technology-table/technology-table.component';
 import { ContactsComponent } from './components/footer-section/contacts/contacts.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactsComponent } from './components/footer-section/contacts/contacts
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
