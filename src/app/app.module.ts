@@ -9,6 +9,7 @@ import { ProjectsComponent } from './components/body-section/projects/projects.c
 import { TechnologyTableComponent } from './components/header-section/technology-table/technology-table.component';
 import { ContactsComponent } from './components/footer-section/contacts/contacts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
