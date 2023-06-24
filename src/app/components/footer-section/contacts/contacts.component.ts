@@ -41,22 +41,4 @@ export class ContactsComponent {
     }
     this.form.reset();
   }
-  // public sendEmail(e: Event) {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       'service_5ptkduo',
-  //       'template_3hgqo5t',
-  //       e.target as HTMLFormElement,
-  //       'B9WislRSQ5ZFNEmb5'
-  //     )
-  //     .then(
-  //       (result: EmailJSResponseStatus) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // }
 }
