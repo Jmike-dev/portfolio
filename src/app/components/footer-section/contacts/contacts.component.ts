@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import emailjs from '@emailjs/browser';
+import { FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
