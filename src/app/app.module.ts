@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header-section/header/header.component';
-import { AboutComponent } from './components/header-section/about/about.component';
-import { ProjectsComponent } from './components/body-section/projects/projects.component';
-import { TechnologyTableComponent } from './components/header-section/technology-table/technology-table.component';
-import { ContactsComponent } from './components/footer-section/contacts/contacts.component';
+import { HeaderComponent } from './components/sections/header-section/header/header.component';
+import { AboutComponent } from './components/sections/header-section/about/about.component';
+import { ProjectsComponent } from './components/sections/body-section/projects/projects.component';
+import { TechnologyTableComponent } from './components/sections/header-section/technology-table/technology-table.component';
+import { ContactsComponent } from './components/sections/footer-section/contacts/contacts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 
