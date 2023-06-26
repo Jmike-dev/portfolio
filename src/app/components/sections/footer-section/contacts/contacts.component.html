@@ -1,6 +1,7 @@
 <!-- parent div -->
 <div
   class="flex min-h-screen items-center justify-center bg-primary-teal-green pt-5"
+  id="contact-me"
 >
   <!-- contact div container -->
   <div
@@ -9,16 +10,19 @@
     <!-- contact info div container -->
     <div class="flex flex-col justify-between space-y-8">
       <div>
-        <h1 class="font-spartan text-3xl font-bold tracking-wide lg:text-5xl text-amber-50">
+        <h1
+          class="font-spartan text-3xl font-bold tracking-wide text-amber-50 lg:text-5xl"
+        >
           Contact Me
         </h1>
         <p class="p-2 font-spartan text-xl text-primary-soft-brown">
-            For further information, please contact using the form or the following links
+          For further information, please contact using the form or the
+          following links
         </p>
       </div>
       <!-- email and number div container -->
       <div class="flex flex-col space-y-6 text-amber-100">
-        <div class="inline-flex items-center space-x-2 ">
+        <div class="inline-flex items-center space-x-2">
           <fa-icon [icon]="faPhone" class="text-3xl"></fa-icon>
           <span class="text-2xl">+254 703 801 725</span>
         </div>
@@ -44,7 +48,12 @@
     <!-- form div container-->
     <div class="rounded-xl bg-primary-teal-green p-8 shadow-lg">
       <!-- form -->
-      <form action="" class="flex flex-col space-y-4" [formGroup]="form" (submit)="sendEmail($event)">
+      <form
+        action=""
+        class="flex flex-col space-y-4"
+        [formGroup]="form"
+        (submit)="sendEmail($event)"
+      >
         <div class="flex flex-col">
           <label for="" class="text-sm text-primary-soft-brown">
             your name</label
@@ -75,7 +84,7 @@
         </div>
         <!-- {{form.value | json}} -->
         <button
-        type="submit"
+          type="submit"
           class="inline-block self-end rounded-lg bg-purple-500 px-6 py-2 font-spartan text-sm font-bold uppercase text-primary-soft-brown duration-300 ease-in-out hover:-translate-y-1 hover:bg-primary-soft-brown hover:text-purple-500 hover:shadow-lg"
         >
           send message

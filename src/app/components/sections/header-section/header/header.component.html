@@ -32,14 +32,22 @@
   </div>
   <!-- button container -->
   <div
-    class="absolute left-10 top-60 w-24 sm:w-32 shadow-sm transition duration-500 ease-in-out hover:translate-x-2 hover:bg-primary-soft-brown rounded-b-lg hover:shadow-primary-soft-brown md:bottom-60 md:left-48"
+    class="absolute left-10 top-60 h-24 w-24 rounded-b-lg shadow-sm transition duration-500 ease-in-out hover:translate-x-2 hover:bg-primary-soft-brown hover:shadow-primary-soft-brown sm:w-32 md:left-48 md:top-80"
   >
     <!-- button -->
     <button
+      (click)="onClick.showForm = true"
       class="h-full w-full rounded-lg bg-primary-purple font-spartan text-xl font-bold text-primary-soft-brown transition duration-500 ease-in-out hover:-translate-y-2 hover:bg-primary-soft-brown hover:text-primary-purple hover:shadow-purple-500 md:text-3xl"
     >
       Get In Touch
     </button>
+  </div>
+  <!-- pop up form -->
+  <div
+    class="relative sm:-top-96 -top-48 w-full overflow-visible bg-red-300"
+    
+  >
+    <app-pop-form *ngIf="onClick.showForm"></app-pop-form>
   </div>
 </div>
 <!-- about component -->
