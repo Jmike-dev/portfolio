@@ -1,26 +1,23 @@
 import { Component } from '@angular/core';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup } from '@angular/forms';
-@Component({
-  selector: 'app-contacts',
-  templateUrl: './contacts.component.html',
-})
-export class ContactsComponent {
-  faPhone = faPhone;
-  faEnvelope = faEnvelope;
-  faLinkedin = faLinkedin;
-  faGithub = faGithub;
+import { FormService } from '../service/form.service';
+import { faX } from '@fortawesome/free-solid-svg-icons';
 
-  // creating the form porperties
+@Component({
+  selector: 'app-pop-form',
+  templateUrl: './pop-form.component.html',
+})
+export class PopFormComponent {
+  faX = faX;
+
   form: FormGroup = this.fb.group({
     client_name: '',
     client_email: '',
     client_message: '',
   });
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, public onClick: FormService) {}
 
   async sendEmail(e: Event) {
     e.preventDefault();

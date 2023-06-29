@@ -10,6 +10,7 @@ import { TechnologyTableComponent } from './components/sections/header-section/t
 import { ContactsComponent } from './components/sections/footer-section/contacts/contacts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PopFormComponent } from './components/pop-ups/pop-form/pop-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     ProjectsComponent,
     TechnologyTableComponent,
-    ContactsComponent
+    ContactsComponent,
+    PopFormComponent
   ],
   imports: [
     BrowserModule,
