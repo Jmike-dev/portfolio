@@ -3,13 +3,14 @@
   <div
     class="w-2/3 rounded-xl bg-teal-950 bg-opacity-50 p-8 shadow-lg sm:w-1/3"
   >
-    <!-- form -->
+    <!-- close form button -->
     <button
-      class="absolute right-24 top-3 h-8 w-8 rounded-full bg-primary-soft-brown sm:right-[28rem]"
+      class="absolute right-24 top-3 h-8 w-8 rounded-full bg-primary-soft-brown sm:right-[28rem] text-primary-purple hover:bg-primary-purple hover:text-primary-soft-brown transition ease-in-out duration-200"
       (click)="onClick.showForm = false"
     >
       <fa-icon [icon]="faX"></fa-icon>
     </button>
+    <!-- form -->
     <form
       action=""
       class="flex flex-col space-y-4"
