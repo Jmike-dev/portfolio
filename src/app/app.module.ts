@@ -11,6 +11,8 @@ import { ContactsComponent } from './layout/footer/contacts/contacts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PopFormComponent } from './pop-ups/pop-form/pop-form.component';
+import { HomePageComponent } from './pages/home/home-page/home-page.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PopFormComponent } from './pop-ups/pop-form/pop-form.component';
     ProjectsComponent,
     TechnologyTableComponent,
     ContactsComponent,
-    PopFormComponent
+    PopFormComponent,
+    HomePageComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
