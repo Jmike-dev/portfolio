@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { FormService } from '../service/form.service';
+import { FormService } from '../../service/form.service';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

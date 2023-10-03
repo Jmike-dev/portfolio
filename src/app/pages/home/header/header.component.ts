@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormService } from 'src/app/components/pop-ups/service/form.service';
+import { FormService } from 'src/app/service/form.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
