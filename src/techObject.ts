@@ -1,9 +1,15 @@
-import { Technologies } from './interface/Technologies';
+// import { Technologies } from './inerface/Technologies';
+
+export interface Technologies {
+  icon: string;
+  name: string;
+}
+
 export const TechStack: Technologies[] = [
-    {
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-      name: 'JavaScript',
-    },
+  {
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    name: 'JavaScript',
+  },
   {
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg',
     name: 'Typescript',
@@ -30,6 +36,8 @@ export const TechStack: Technologies[] = [
   },
   {
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
-    name: 'TailwindCss',
+    name: 'TailwindCSS',
   },
 ];
+
+

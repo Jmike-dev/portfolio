@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { TechStack } from 'src/techObject';
-import { Technologies } from 'src/inerface/Technologies';
+import { TechStack, Technologies } from 'src/techObject';
 
 @Component({
   selector: 'app-technology-table',
