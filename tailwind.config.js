@@ -10,8 +10,11 @@ module.exports = {
       colors: {
         primary: {
           "teal-green": "#24596D",
-          'purple': "#9C69CC",
+          purple: "#9C69CC",
           "soft-brown": "#D5CABD",
+          Fuchsia: "#C690F0",
+          sky: "#00B5F9",
+          Cyan: "#06B6D4",
         },
       },
     },
