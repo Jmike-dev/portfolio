@@ -1,116 +1,20 @@
-<div
-  class="flex w-full flex-col items-center justify-center bg-primary-teal-green pt-8"
->
-  <!--  parent technologies table div -->
+<!-- parent div -->
+<div class="min-h-screen w-full bg-cyan-700 font-spartan md:relative">
+  <!-- h1 div -->
   <div
-    style="background-image: url('assets/images/background3.png')"
-    class="flex w-3/4 rounded-2xl bg-cover text-gray-300 shadow-2xl shadow-teal-950"
+    class="p-8 text-center text-3xl font-bold text-cyan-50 underline sm:left-48 sm:p-16 sm:text-4xl md:absolute md:left-[31rem] md:mt-40 md:p-0 md:text-5xl"
   >
-    <!-- child  technologies table div container -->
+    <h1>My techStack</h1>
+  </div>
+  <!-- techStack container -->
+  <div class="grid grid-cols-4 gap-4 p-3 md:gap-8 md:p-60">
+    <!-- each tech div container -->
     <div
-      class="mx-auto flex h-full w-full max-w-[1000px] flex-col items-center justify-center p-4"
+      *ngFor="let techStack of techStacks"
+      class="rounded-lg bg-cyan-500 text-center text-base shadow-md shadow-cyan-950 md:shadow-xl"
     >
-      <!-- h1 div conatiner -->
-      <div
-        class="flex w-3/4 items-center justify-center rounded-3xl shadow-xl transition duration-700 ease-in-out hover:-translate-y-1 hover:shadow-purple-500 lg:w-2/3"
-      >
-        <h1
-          class="text-center font-spartan text-3xl font-bold text-primary-purple transition duration-700 ease-in-out hover:text-purple-500 lg:text-4xl"
-        >
-          technologies and frameworks
-        </h1>
-      </div>
-      <!-- parent langauge icon container  -->
-      <div
-        class="grid w-full grid-cols-2 gap-8 py-8 text-center sm:grid-cols-4"
-      >
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">
-            Typescript
-          </p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">
-            javascript
-          </p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">react</p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">angular</p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">HTML</p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">CSS</p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">git</p>
-        </div>
-        <!-- language icon div -->
-        <div
-          class="rounded-xl bg-purple-950 shadow-xl duration-500 hover:-translate-y-1 hover:shadow-purple-700"
-        >
-          <img
-            class="mx-auto w-20"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-          />
-          <p class="my-4 font-lora text-lg text-primary-soft-brown">
-            tailwindcss
-          </p>
-        </div>
-      </div>
+      <img src="{{ techStack.icon }}" class="p-2" />
+      <p class="p-1 text-cyan-950">{{ techStack.name }}</p>
     </div>
   </div>
 </div>
