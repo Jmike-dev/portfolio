@@ -1,5 +1,5 @@
 <!-- parent div -->
-<div class="min-h-screen w-full bg-cyan-700 font-spartan md:relative">
+<div class="min-h-fit w-full bg-cyan-700 font-spartan md:relative md:min-h-full">
   <!-- h1 div -->
   <div
     class="p-8 text-center text-3xl font-bold text-cyan-50 underline sm:left-48 sm:p-16 sm:text-4xl md:absolute md:left-[31rem] md:mt-40 md:p-0 md:text-5xl"
@@ -11,11 +11,41 @@
     <!-- each tech div container -->
     <div
       *ngFor="let techStack of techStacks"
-      class="rounded-lg bg-cyan-500 text-center text-base shadow-md shadow-cyan-950 md:shadow-xl"
+      class="rounded-lg bg-cyan-500 text-center text-base shadow-md shadow-cyan-950 md:shadow-xl md:text-xl sm:text-lg"
     >
       <img src="{{ techStack.icon }}" class="p-2" />
       <p class="p-1 text-cyan-950">{{ techStack.name }}</p>
     </div>
   </div>
-  <button>projects</button>
+  
+  <!-- button div -->
+  <div class="p-5 md:absolute md:bottom-10">
+    <a
+      routerLink="/projects"
+      class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950 ml-40 sm:ml-80 md:ml-[44rem] "
+    >
+      <span
+        class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-sky-100 opacity-100 transition-all group-hover:top-0 group-hover:h-full"
+      ></span>
+      <span
+        class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
+      >
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+          ></path>
+        </svg>
+      </span>
+      <span class="relative">My Projects</span>
+    </a>
+  </div>
 </div>
