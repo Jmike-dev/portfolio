@@ -1,11 +1,65 @@
-<div>
-  <a
-    routerLink = "/home"
-    class="group relative inline-block overflow-hidden rounded bg-purple-50 px-5 py-2.5 font-medium text-purple-600"
+<div class="bg-cyan-400">
+  <div
+    class="text-bold flex justify-center gap-4 rounded-md p-2 font-spartan text-2xl"
   >
-    <span
-      class="absolute left-0 top-0 mb-0 flex h-0 w-full translate-y-0 transform bg-purple-600 opacity-90 transition-all duration-200 ease-out group-hover:h-full"
-    ></span>
-    <span class="relative group-hover:text-white">Button Text</span>
-  </a>
+    <a
+      href="/home"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+    >
+      <span
+        class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
+      ></span>
+
+      <span
+        class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+      >
+        <fa-icon [icon]="faHome"></fa-icon>
+      </span>
+      <span
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        >Home</span
+      >
+    </a>
+    <a
+      href="/projects"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+    >
+      <span
+        class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
+      ></span>
+
+      <span
+        class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+      >
+        <fa-icon [icon]="faLaptop"></fa-icon>
+      </span>
+      <span
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        >Projects</span
+      >
+    </a>
+    <a
+      href="/about"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+    >
+      <span
+        class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
+      ></span>
+
+      <span
+        class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+      >
+        <fa-icon [icon]="faPerson"></fa-icon>
+      </span>
+      <span
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        >About</span
+      >
+    </a>
+  </div>
+  <!-- mobile div -->
+  <!-- <div class="md:hidden">
+    <button><fa-icon [icon]="faBars"></fa-icon></button>
+    
+  </div> -->
 </div>

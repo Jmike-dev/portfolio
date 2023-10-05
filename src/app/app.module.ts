@@ -22,7 +22,9 @@ const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path: 'home', component: HomePageComponent},
   {path: 'projects', component: ProjectsComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  // {path: 'contact', component: ContactsComponent},
+
 ]
 @NgModule({
   declarations: [
@@ -46,7 +48,7 @@ const routes: Routes = [
       timeOut: 1500,
       preventDuplicates: true,
     }),
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{scrollPositionRestoration:'enabled'}),
   ],
   providers: [],
   bootstrap: [AppComponent],
