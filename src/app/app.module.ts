@@ -4,8 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-// components
 import { AppRoutingModule } from './app-routing.module';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/home/header/header.component';
 import { AboutComponent } from './pages/home/about/about.component';
@@ -39,6 +41,11 @@ const routes: Routes = [
     AppRoutingModule,
     FontAwesomeModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 1500,
+      preventDuplicates: true,
+    }),
     RouterModule.forRoot(routes),
   ],
   providers: [],

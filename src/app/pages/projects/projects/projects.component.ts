@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 interface MyProjects{
    image: any;
    github:string;
@@ -12,6 +15,9 @@ interface MyProjects{
   templateUrl: './projects.component.html',
 })
 export class ProjectsComponent {
+  faGithub = faGithub;
+  faGlobe = faGlobe;
+
   projects: MyProjects[] = [
     {
       image: '../../../../assets/images/recipeProject.png',
