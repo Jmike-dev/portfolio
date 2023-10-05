@@ -24,6 +24,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "ngx-toastr": "^15.0.0",
     "prettier": "^2.8.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

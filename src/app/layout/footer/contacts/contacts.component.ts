@@ -3,6 +3,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
@@ -20,7 +21,7 @@ export class ContactsComponent {
     client_message: '',
   });
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
   async sendEmail(e: Event) {
     e.preventDefault();
@@ -29,7 +30,8 @@ export class ContactsComponent {
       !this.form.value.client_email ||
       !this.form.value.client_message
     ) {
-      alert('form must be filled');
+      // alert('form must be filled');
+      this.toastr.error('form must be filled')
       this.form.reset();
     } else {
       emailjs.init('B9WislRSQ5ZFNEmb5');
@@ -38,7 +40,8 @@ export class ContactsComponent {
         client_email: this.form.value.client_email,
         client_message: this.form.value.client_message,
       });
-      alert('email has been sent successfully');
+      // alert('email has been sent successfully');
+      this.toastr.success('email sent')
     }
     this.form.reset();
   }
