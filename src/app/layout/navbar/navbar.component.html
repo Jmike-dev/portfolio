@@ -57,9 +57,18 @@
       >
     </a>
   </div>
-  <!-- mobile div -->
-  <!-- <div class="md:hidden">
-    <button><fa-icon [icon]="faBars"></fa-icon></button>
-    
-  </div> -->
+
+  <div class="dropdown-end dropdown ml-80 md:hidden">
+    <button tabindex="0" class="btn m-1 bg-cyan-950 text-primary-Fuchsia">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </button>
+    <ul
+      tabindex="0"
+      class="dropdown-content menu rounded-box z-[1] w-52 bg-cyan-900 p-2 text-cyan-100 shadow"
+    >
+      <li><a routerLink="/home"> Home</a></li>
+      <li><a routerLink="/projects">Project</a></li>
+      <li><a routerLink="/about">About</a></li>
+    </ul>
+  </div>
 </div>
