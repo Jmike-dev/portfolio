@@ -1,4 +1,3 @@
-// import { Technologies } from './inerface/Technologies';
 
 export interface Technologies {
   icon: string;
@@ -19,7 +18,7 @@ export const TechStack: Technologies[] = [
     name: 'React',
   },
   {
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg',
     name: 'Angular',
   },
   {
