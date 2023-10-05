@@ -1,4 +1,4 @@
-<div class="h-screen w-full bg-cyan-700 font-spartan pb-3">
+<div class="h-screen w-full bg-cyan-700 pb-3 font-spartan">
   <!-- header div -->
   <div class="p-10 text-center text-5xl font-bold text-cyan-100 underline">
     <h1>My Projects</h1>
@@ -7,11 +7,11 @@
   <div *ngFor="let project of projects" class="w-full pt-8">
     <!-- child project container -->
     <div
-      class="relative mx-auto my-4 w-4/5 rounded-lg bg-cyan-500 md:p-10 shadow-xl md:pl-[32rem] pt-28 p-5 sm:pt-52"
+      class="relative mx-auto my-4 w-4/5 rounded-lg bg-cyan-500 p-5 pt-28 shadow-xl sm:pt-52 md:p-10 md:pl-[32rem]"
     >
       <!-- image div -->
       <div
-        class="absolute -top-8 left-6 flex w-5/6 items-center md:-left-8 md:top-0 md:h-full md:w-1/2 sm:left-9"
+        class="absolute -top-8 left-6 flex w-5/6 items-center sm:left-9 md:-left-8 md:top-0 md:h-full md:w-1/2"
       >
         <img class="rounded-lg shadow-lg" src="{{ project.image }}" alt="" />
       </div>
@@ -32,20 +32,7 @@
           <span
             class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
           >
-            <!-- <svg
-              class="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              ></path>
-            </svg> -->
+            <fa-icon [icon]="faGithub"></fa-icon>
           </span>
           <span class="relative right-2 md:right-0">github</span>
         </a>
@@ -59,20 +46,7 @@
           <span
             class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
           >
-            <svg
-              class="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              ></path>
-            </svg>
+            <fa-icon [icon]="faGlobe"></fa-icon>
           </span>
           <span class="relative right-3 md:right-0">liveDemo</span>
         </a>
