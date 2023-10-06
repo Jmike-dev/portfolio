@@ -1,7 +1,10 @@
 <!-- parent div -->
-<div class="min-h-fit w-full bg-cyan-700 font-spartan md:relative md:min-h-full">
+<div
+  class="min-h-fit w-full bg-cyan-700 font-spartan md:relative md:min-h-full"
+>
   <!-- h1 div -->
   <div
+    @cardYanimation
     class="p-8 text-center text-3xl font-bold text-cyan-50 underline sm:left-48 sm:p-16 sm:text-4xl md:absolute md:left-[31rem] md:mt-40 md:p-0 md:text-5xl"
   >
     <h1>My techStack</h1>
@@ -10,19 +13,20 @@
   <div class="grid grid-cols-4 gap-4 p-3 md:gap-8 md:p-60">
     <!-- each tech div container -->
     <div
+      @cardXanimation
       *ngFor="let techStack of techStacks"
-      class="rounded-lg bg-cyan-500 text-center text-base shadow-md shadow-cyan-950 md:shadow-xl md:text-xl sm:text-lg"
+      class="rounded-lg bg-cyan-500 text-center text-base shadow-md shadow-cyan-950 sm:text-lg md:text-xl md:shadow-xl"
     >
       <img src="{{ techStack.icon }}" class="p-2" />
       <p class="p-1 text-cyan-950">{{ techStack.name }}</p>
     </div>
   </div>
-  
+
   <!-- button div -->
   <div class="p-5 md:absolute md:bottom-10">
     <a
       routerLink="/projects"
-      class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950 ml-40 sm:ml-80 md:ml-[44rem] "
+      class="group relative ml-40 inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950 sm:ml-80 md:ml-[44rem]"
     >
       <span
         class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-sky-100 opacity-100 transition-all group-hover:top-0 group-hover:h-full"

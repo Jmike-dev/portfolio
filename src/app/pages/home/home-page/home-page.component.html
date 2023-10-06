@@ -2,10 +2,14 @@
   <!-- info div -->
   <div
     class="m-4 flex flex-col rounded-lg bg-cyan-500 p-6 shadow-xl shadow-cyan-800 md:w-5/6 md:flex-row"
+    @cardYanimation
   >
     <!-- image div -->
     <div class="w-4/5 sm:w-3/5 md:w-2/5">
-      <img src="../../../../assets/images/image3.jpg" class="rounded-full border-2 border-sky-100" />
+      <img
+        src="../../../../assets/images/image3.jpg"
+        class="rounded-full border-2 border-sky-100"
+      />
     </div>
     <!-- text div -->
     <div class="text-justify text-2xl md:w-3/5">
@@ -19,7 +23,7 @@
       </h1>
       <!-- contact button -->
       <a
-        routerLink="/projects"
+        routerLink="/contact"
         class="group relative mt-3 inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950"
       >
         <span
@@ -48,5 +52,5 @@
     </div>
   </div>
 </div>
-<app-technology-table></app-technology-table>
+<app-technology-table ></app-technology-table>
 <app-contacts></app-contacts>
