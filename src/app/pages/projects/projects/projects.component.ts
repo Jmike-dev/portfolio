@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { cardXanimation, cardYanimation, fadeInAnimation } from 'src/app/shared-animations/animations';
 
 interface MyProjects{
    image: any;
@@ -13,6 +14,7 @@ interface MyProjects{
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
+  animations:[fadeInAnimation,cardXanimation,cardYanimation]
 })
 export class ProjectsComponent {
   faGithub = faGithub;

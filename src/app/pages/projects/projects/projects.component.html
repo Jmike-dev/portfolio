@@ -1,4 +1,6 @@
-<div class="h-screen w-full bg-cyan-700 pb-3 font-spartan">
+<div class="h-screen w-full bg-cyan-700 pb-3 font-spartan "
+
+>
   <!-- header div -->
   <div class="p-10 text-center text-5xl font-bold text-cyan-100 underline">
     <h1>My Projects</h1>
@@ -7,10 +9,11 @@
   <div *ngFor="let project of projects" class="w-full pt-8">
     <!-- child project container -->
     <div
+    @cardYanimation
       class="relative mx-auto my-4 w-4/5 rounded-lg bg-cyan-500 p-5 pt-28 shadow-xl sm:pt-52 md:p-10 md:pl-[32rem]"
     >
       <!-- image div -->
-      <div
+      <div 
         class="absolute -top-8 left-6 flex w-5/6 items-center sm:left-9 md:-left-8 md:top-0 md:h-full md:w-1/2"
       >
         <img class="rounded-lg shadow-lg border-2 border-cyan-100" src="{{ project.image }}" alt="" />
