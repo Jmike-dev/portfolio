@@ -1,22 +1,21 @@
-<div class="flex w-full content-center justify-center bg-cyan-700 font-spartan">
+<div
+  class="flex w-full content-center justify-center bg-background font-spartan"
+>
   <!-- info div -->
   <div
-    class="m-4 flex flex-col rounded-lg bg-cyan-500 p-6 shadow-xl shadow-cyan-800 md:w-5/6 md:flex-row"
+    class="m-4 flex flex-col rounded-lg p-6 md:w-5/6 md:flex-row"
     @cardYanimation
   >
     <!-- image div -->
     <div class="w-4/5 sm:w-3/5 md:w-2/5">
-      <img
-        src="../../../../assets/images/image3.jpg"
-        class="rounded-full border-2 border-sky-100"
-      />
+      <img src="../../../../assets/images/image3.jpg" class="rounded-full" />
     </div>
     <!-- text div -->
     <div class="text-justify text-2xl md:w-3/5">
-      <h1 class="mt-10 text-sky-950 md:mt-40">
+      <h1 class="mt-10 text-text md:mt-40">
         Hey 👋 there am
-        <span class="text-3xl font-extrabold text-sky-100"> Michael </span
-        >a<span class="text-3xl font-extrabold text-sky-100">
+        <span class="text-3xl font-extrabold text-accent"> Michael </span
+        >a<span class="text-3xl font-extrabold text-accent">
           frontend developer.</span
         >My love for technology and design has led me to be software developer.I
         can't wait to work with you soon.
@@ -24,10 +23,10 @@
       <!-- contact button -->
       <a
         routerLink="/contact"
-        class="group relative mt-3 inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950"
+        class="group relative mt-3 inline-flex items-center overflow-hidden rounded-xl bg-primary px-12 py-3 text-lg font-medium text-text hover:bg-secondary"
       >
         <span
-          class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-sky-100 opacity-100 transition-all group-hover:top-0 group-hover:h-full"
+          class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-secondary opacity-100 transition-all group-hover:top-0 group-hover:h-full"
         ></span>
         <span
           class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
@@ -52,5 +51,5 @@
     </div>
   </div>
 </div>
-<app-technology-table ></app-technology-table>
+<app-technology-table></app-technology-table>
 <app-contacts></app-contacts>

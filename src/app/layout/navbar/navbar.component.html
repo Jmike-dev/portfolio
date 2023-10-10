@@ -1,10 +1,10 @@
-<div class="bg-cyan-400">
+<div class="bg-background">
   <div
     class="text-bold flex justify-center gap-4 rounded-md p-2 font-spartan text-2xl"
   >
     <a
       routerLink="/home"
-      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-text transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
     >
       <span
         class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
@@ -16,13 +16,13 @@
         <fa-icon [icon]="faHome"></fa-icon>
       </span>
       <span
-        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-primary"
         >Home</span
       >
     </a>
     <a
       routerLink="/projects"
-      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-text transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
     >
       <span
         class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
@@ -34,13 +34,13 @@
         <fa-icon [icon]="faLaptop"></fa-icon>
       </span>
       <span
-        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-primary"
         >Projects</span
       >
     </a>
     <a
       routerLink="/about"
-      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-cyan-950 transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+      class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold text-text transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
     >
       <span
         class="absolute bottom-0 left-0 h-1 w-full bg-primary-Fuchsia transition-all duration-150 ease-in-out group-hover:h-full"
@@ -52,19 +52,19 @@
         <fa-icon [icon]="faPerson"></fa-icon>
       </span>
       <span
-        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white"
+        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-primary"
         >About</span
       >
     </a>
   </div>
 
   <div class="dropdown-end dropdown ml-80 md:hidden sm:ml-[35rem]">
-    <button tabindex="0" class="btn m-1 bg-cyan-800 text-primary-Fuchsia">
+    <button tabindex="0" class="btn m-1  text-text bg-background">
       <fa-icon [icon]="faBars"></fa-icon>
     </button>
     <ul
       tabindex="0"
-      class="dropdown-content menu rounded-box z-[1] w-52 bg-cyan-900 p-2 text-cyan-100 shadow"
+      class="dropdown-content menu rounded-box z-[1] w-52 bg-background p-2 text-text shadow"
     >
       <li><a routerLink="/home"> Home</a></li>
       <li><a routerLink="/projects">Project</a></li>

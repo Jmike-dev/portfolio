@@ -1,6 +1,6 @@
-<div class="h-screen w-full bg-cyan-700 pb-3 font-spartan">
+<div class="h-screen w-full bg-background pb-3 font-spartan">
   <!-- header div -->
-  <div class="p-10 text-center text-5xl font-bold text-cyan-100 underline">
+  <div class="p-10 text-center text-5xl font-bold text-text underline">
     <h1>My Projects</h1>
   </div>
   <!-- parent project  container -->
@@ -8,31 +8,31 @@
     <!-- child project container -->
     <div
       @cardYanimation
-      class="relative mx-auto my-4 w-4/5 rounded-lg bg-cyan-500 p-5 pt-28 shadow-xl sm:pt-52 md:p-10 md:pl-[32rem]"
+      class="relative mx-auto my-4 w-4/5 rounded-lg bg-primary p-5 pt-28 shadow-xl sm:pt-52 md:p-10 md:pl-[32rem]"
     >
       <!-- image div -->
       <div
         class="absolute -top-8 left-6 flex w-5/6 items-center sm:left-9 md:-left-8 md:top-0 md:h-full md:w-1/2"
       >
         <img
-          class="rounded-lg border-2 border-cyan-100 shadow-lg"
+          class="rounded-lg shadow-lg"
           src="{{ project.image }}"
           alt=""
         />
       </div>
       <!-- title h1 tag -->
-      <h1 class="text-4xl font-bold text-cyan-950">{{ project.title }}</h1>
+      <h1 class="text-4xl font-bold text-text">{{ project.title }}</h1>
 
       <!-- discription div -->
-      <p class="mt-5 leading-loose text-cyan-950">{{ project.discription }}</p>
+      <p class="mt-5 leading-loose text-text">{{ project.discription }}</p>
       <!-- links to project buttons -->
       <div class="flex gap-5 pt-2">
         <a
           href="{{ project.github }}"
-          class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950"
+          class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-accent px-12 py-3 text-lg font-medium text-text hover:bg-secondary hover:text-accent"
         >
           <span
-            class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-indigo-100 opacity-100 transition-all group-hover:top-0 group-hover:h-full"
+            class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-background opacity-100 transition-all group-hover:top-0 group-hover:h-full"
           ></span>
           <span
             class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
@@ -43,10 +43,10 @@
         </a>
         <a
           href="{{ project.liveDemo }}"
-          class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-sky-100 px-12 py-3 text-lg font-medium text-sky-100 hover:bg-primary-Fuchsia hover:text-cyan-950"
+          class="group relative inline-flex items-center overflow-hidden rounded-xl border-2 border-accent px-12 py-3 text-lg font-medium text-text hover:bg-secondary hover:text-accent"
         >
           <span
-            class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-indigo-100 opacity-100 transition-all group-hover:top-0 group-hover:h-full"
+            class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-background opacity-100 transition-all group-hover:top-0 group-hover:h-full"
           ></span>
           <span
             class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
