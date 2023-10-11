@@ -5,17 +5,17 @@
   <!-- h1 div -->
   <div
     @cardYanimation
-    class="p-8 text-center text-3xl font-bold text-text underline sm:left-48 sm:p-16 sm:text-4xl md:absolute md:left-[31rem] md:mt-40 md:p-0 md:text-5xl"
+    class="p-4 text-center text-3xl font-bold text-text underline sm:text-4xl md:pt-8 md:text-5xl"
   >
     <h1>My techStack</h1>
   </div>
   <!-- techStack container -->
-  <div class="grid grid-cols-4 gap-4 p-3 md:gap-8 md:p-60">
+  <div class="mx-auto grid grid-cols-4 gap-4 p-3 md:w-1/2 md:gap-8">
     <!-- each tech div container -->
     <div
       @cardXanimation
       *ngFor="let techStack of techStacks"
-      class="rounded-lg  text-center text-base sm:text-lg md:text-xl "
+      class="rounded-lg text-center text-base sm:text-lg md:text-xl"
     >
       <img src="{{ techStack.icon }}" class="p-2" />
       <p class="p-1 text-text">{{ techStack.name }}</p>
@@ -23,10 +23,10 @@
   </div>
 
   <!-- button div -->
-  <div class="p-5 md:absolute md:bottom-10">
+  <div class=" p-8 pt-5  flex">
     <a
       routerLink="/projects"
-      class="group relative ml-40 inline-flex items-center overflow-hidden rounded-xl px-12 py-3 text-lg font-medium text-background bg-accent hover:bg-primary-Fuchsia hover:text-text sm:ml-80 md:ml-[44rem]"
+      class="group relative mx-auto inline-flex items-center overflow-hidden rounded-xl bg-accent px-12 py-3 text-lg font-medium text-background hover:text-text"
     >
       <span
         class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-primary opacity-100 transition-all group-hover:top-0 group-hover:h-full"
