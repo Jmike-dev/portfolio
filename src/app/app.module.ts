@@ -9,12 +9,10 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './pages/home/header/header.component';
 import { AboutComponent } from './pages/home/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects/projects.component';
 import { TechnologyTableComponent } from './pages/home/technology-table/technology-table.component';
 import { ContactsComponent } from './layout/footer/contacts/contacts.component';
-import { PopFormComponent } from './pop-ups/pop-form/pop-form.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 
@@ -29,12 +27,10 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     AboutComponent,
     ProjectsComponent,
     TechnologyTableComponent,
     ContactsComponent,
-    PopFormComponent,
     HomePageComponent,
     NavbarComponent,
   ],
