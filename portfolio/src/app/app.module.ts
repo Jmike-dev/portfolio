@@ -9,12 +9,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // components
 import { AppComponent } from './app.component';
-import { AboutComponent } from './pages/home/about/about.component';
+import { AboutComponent } from './pages/about/about.component';
 import { ProjectsComponent } from './pages/projects/projects/projects.component';
 import { TechnologyTableComponent } from './pages/home/technology-table/technology-table.component';
-import { ContactsComponent } from './layout/footer/contacts/contacts.component';
+import { ContactsComponent } from './components/footer/contacts/contacts.component';
 import { HomePageComponent } from './pages/home/home-page/home-page.component';
-import { NavbarComponent } from './layout/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
