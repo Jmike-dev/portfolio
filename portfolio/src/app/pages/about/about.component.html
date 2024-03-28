@@ -1,19 +1,28 @@
 <div class="w-full bg-background font-spartan">
-  <!-- h1 div -->
-  <div class="w-full p-4 text-center text-5xl text-text underline font-bold">
-    <h1>About Me</h1>
-  </div>
-  <!-- about info container -->
-  <div class="flex flex-col  rounded-lg w-5/6 mx-auto md:flex-row shadow-md "
-  @cardYanimation>
-    <!-- image div -->
-    <div class="w-full  md:w-2/5 items-center  mx-auto rounded-md">
-      <img src="../../../../assets/images/image1.png" alt="" >
+    <!-- h1 div -->
+    <div class="w-full p-4 text-center text-5xl font-bold text-text underline">
+        <h1>About Me</h1>
     </div>
-    <!-- text div -->
-    <div class="text-text  text-xl md:text-2xl sm:w-4/5 mx-auto  text-center  sm:p-5 p-4 w-5/6  rounded-md">
-      <h1 class="md:mt-32 bg-primary p-2 rounded-md">I am frontend developer.My experience working with react and Angular make me a great asset to your team.Further more I quickly adapt to any work enviroment.I can't wait to work with you.   </h1>
+    <!-- about info container -->
+    <div
+        class="mx-auto flex w-5/6 flex-col rounded-lg shadow-md md:flex-row"
+        @cardYanimation
+    >
+        <!-- image div -->
+        <div class="mx-auto w-full items-center rounded-md md:w-2/5">
+            <img src="../../../../assets/images/image1.png" alt="" />
+        </div>
+        <!-- text div -->
+        <div
+            class="mx-auto w-5/6 rounded-md p-4 text-center text-xl text-text sm:w-4/5 sm:p-5 md:text-2xl"
+        >
+            <h1 class="rounded-md bg-primary p-2 md:mt-32">
+                I am frontend developer.My experience working with react and
+                Angular make me a great asset to your team.Further more I
+                quickly adapt to any work enviroment.I can't wait to work with
+                you.
+            </h1>
+        </div>
     </div>
-  </div>
 </div>
 <app-contacts></app-contacts>
