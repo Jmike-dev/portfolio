@@ -1,61 +1,61 @@
 <!-- header div -->
 <div
-  class="bg-background p-10 text-center text-5xl font-bold text-text underline"
+    class="bg-background p-10 text-center text-5xl font-bold text-text underline"
 >
-  <h1>My Projects</h1>
+    <h1>My Projects</h1>
 </div>
 <div
-  class="h-screen w-full bg-background  font-spartan"
-  *ngFor="let project of projects"
+    class="h-screen w-full bg-background font-spartan"
+    *ngFor="let project of projects"
 >
-  <!-- parent project  container -->
+    <!-- parent project  container -->
 
-  <div class="mx-auto w-5/6 rounded-xl bg-primary">
-    <!-- project  container -->
-    <div class="flex w-full flex-col md:flex-row">
-      <!-- image div -->
-      <div class="rounded-2xl md:w-3/6">
-        <img
-          src="{{ project.image }}"
-          alt=""
-          class="h-full w-full rounded-2xl p-4"
-        />
-      </div>
-      <!-- text div -->
-      <div class="p-2 text-text md:w-3/6">
-        <h1 class="pb-4 text-center text-3xl font-semibold underline">
-          {{ project.title }}
-        </h1>
-        <p class="text-justify text-xl">{{ project.discription }}</p>
-        <!-- button div -->
-        <div class="mt-4 grid grid-cols-2 gap-2 p-4 md:mt-12">
-          <a
-            href="{{ project.github }}"
-            class="group relative inline-flex items-center justify-start overflow-hidden rounded-xl bg-background px-5 py-3 font-medium transition-all hover:bg-white"
-          >
-            <span
-              class="absolute inset-0 rounded-xl border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"
-            ></span>
-            <span
-              class="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-background"
-              >Code</span
-            >
-          </a>
-          <a
-            href="{{ project.liveDemo }}"
-            class="group relative inline-flex items-center justify-start overflow-hidden rounded-xl bg-background px-5 py-3 font-medium transition-all hover:bg-white"
-          >
-            <span
-              class="absolute inset-0 rounded-xl border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"
-            ></span>
-            <span
-              class="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-background"
-              >View Live</span
-            >
-          </a>
+    <div class="mx-auto w-5/6 rounded-xl bg-primary">
+        <!-- project  container -->
+        <div class="flex w-full flex-col md:flex-row">
+            <!-- image div -->
+            <div class="rounded-2xl md:w-3/6">
+                <img
+                    src="{{ project.image }}"
+                    alt=""
+                    class="h-full w-full rounded-2xl p-4"
+                />
+            </div>
+            <!-- text div -->
+            <div class="p-2 text-text md:w-3/6">
+                <h1 class="pb-4 text-center text-3xl md:text-4xl font-semibold underline">
+                    {{ project.title }}
+                </h1>
+                <p class="text-justify text-xl md:text-3xl">{{ project.discription }}</p>
+                <!-- button div -->
+                <div class="mt-4 grid grid-cols-2 gap-2 p-4 md:mt-12">
+                    <a
+                        href="{{ project.github }}"
+                        class="group relative inline-flex items-center justify-start overflow-hidden rounded-xl bg-background px-5 py-3 font-medium transition-all hover:bg-white"
+                    >
+                        <span
+                            class="absolute inset-0 rounded-xl border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"
+                        ></span>
+                        <span
+                            class="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-background text-2xl md:text-3xl"
+                            >Code</span
+                        >
+                    </a>
+                    <a
+                        href="{{ project.liveDemo }}"
+                        class="group relative inline-flex items-center justify-start overflow-hidden rounded-xl bg-background px-5 py-3 font-medium transition-all hover:bg-white text-2xl md:text-3xl"
+                    >
+                        <span
+                            class="absolute inset-0 rounded-xl border-0 border-white transition-all duration-100 ease-linear group-hover:border-[25px]"
+                        ></span>
+                        <span
+                            class="relative w-full text-center text-white transition-colors duration-200 ease-in-out group-hover:text-background"
+                            >View Live</span
+                        >
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 <app-contacts></app-contacts>
