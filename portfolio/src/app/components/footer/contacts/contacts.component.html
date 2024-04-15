@@ -34,9 +34,7 @@
                         [icon]="faEnvelope"
                         class="text-2xl md:text-4xl"
                     ></fa-icon>
-                    <h1 class="text-2xl md:text-4xl"
-                        >gmikekamau@gmail.com</h1
-                    >
+                    <h1 class="text-2xl md:text-4xl">gmikekamau@gmail.com</h1>
                 </div>
             </div>
             <!-- icon div -->
@@ -54,7 +52,9 @@
             </div>
         </div>
         <!-- form div container-->
-        <div class=" text-2xl md:text-3xl mx-auto w-5/6 rounded-xl bg-primary p-8 shadow-lg md:w-2/4">
+        <div
+            class="mx-auto w-5/6 rounded-xl bg-primary p-8 text-2xl shadow-lg md:w-2/4 md:text-3xl"
+        >
             <!-- form -->
             <form
                 action=""
@@ -63,7 +63,7 @@
                 (submit)="sendEmail($event)"
             >
                 <div class="flex flex-col">
-                    <label for="" class=" text-text"> Your Name</label>
+                    <label for="" class="text-text"> Your Name</label>
                     <input
                         formControlName="client_name"
                         type="text"
@@ -71,9 +71,7 @@
                     />
                 </div>
                 <div class="flex flex-col">
-                    <label for="" class=" text-cyan-100">
-                        your Email</label
-                    >
+                    <label for="" class="text-cyan-100"> your Email</label>
                     <input
                         formControlName="client_email"
                         type="email"
@@ -81,7 +79,7 @@
                     />
                 </div>
                 <div class="flex flex-col">
-                    <label for="" class=" text-cyan-100"> message</label>
+                    <label for="" class="text-cyan-100"> message</label>
                     <textarea
                         formControlName="client_message"
                         type="text"
