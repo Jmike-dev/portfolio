@@ -17,13 +17,13 @@ export class ContactsComponent {
     faEnvelope = faEnvelope;
     faLinkedin = faLinkedin;
     faGithub = faGithub;
-
     // creating the form porperties
     form: FormGroup = this.fb.group({
         client_name: '',
         client_email: '',
         client_message: '',
     });
+    gmail = 'gmikekamau@gmail.com';
 
     constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
