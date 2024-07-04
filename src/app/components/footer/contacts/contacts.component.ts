@@ -2,13 +2,16 @@ import {Component, HostBinding} from '@angular/core';
 import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import {ToastrService} from 'ngx-toastr';
 import {fadeInAnimation} from 'src/assets/shared-animations/animations';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 @Component({
     selector: 'app-contacts',
     templateUrl: './contacts.component.html',
     animations: [fadeInAnimation],
+    standalone: true,
+    imports: [FaIconComponent, ReactiveFormsModule],
 })
 export class ContactsComponent {
     @HostBinding('@fadeInAnimation') fadeInAnimation = true;

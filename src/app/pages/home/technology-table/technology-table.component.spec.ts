@@ -8,8 +8,8 @@ describe('TechnologyTableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TechnologyTableComponent ]
-    })
+    imports: [TechnologyTableComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(TechnologyTableComponent);

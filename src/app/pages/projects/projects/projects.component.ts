@@ -6,6 +6,8 @@ import {
     cardYanimation,
     fadeInAnimation,
 } from 'src/assets/shared-animations/animations';
+import { ContactsComponent } from '../../../components/footer/contacts/contacts.component';
+import { NgFor } from '@angular/common';
 
 interface MyProjects {
     image: any;
@@ -18,6 +20,8 @@ interface MyProjects {
     selector: 'app-projects',
     templateUrl: './projects.component.html',
     animations: [fadeInAnimation, cardXanimation, cardYanimation],
+    standalone: true,
+    imports: [NgFor, ContactsComponent],
 })
 export class ProjectsComponent {
     faGithub = faGithub;
