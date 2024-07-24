@@ -6,8 +6,8 @@ import {
     cardYanimation,
     fadeInAnimation,
 } from 'src/assets/shared-animations/animations';
-import { ContactsComponent } from '../../../components/footer/contacts/contacts.component';
-import { NgFor } from '@angular/common';
+import {ContactsComponent} from '../../../components/footer/contacts/contacts.component';
+import {NgFor} from '@angular/common';
 
 interface MyProjects {
     image: any;
