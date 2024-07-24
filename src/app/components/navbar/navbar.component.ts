@@ -1,9 +1,8 @@
-import {Component, HostBinding} from '@angular/core';
+import {Component} from '@angular/core';
 import {faBars, faLaptop, faPerson} from '@fortawesome/free-solid-svg-icons';
 import {faHome} from '@fortawesome/free-solid-svg-icons';
-import {cardYanimation} from 'src/assets/shared-animations/animations';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome';
-import { RouterLink } from '@angular/router';
+import {FaIconComponent} from '@fortawesome/angular-fontawesome';
+import {RouterLink} from '@angular/router';
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
