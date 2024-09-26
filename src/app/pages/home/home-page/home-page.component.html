@@ -4,33 +4,34 @@
     <!-- info div -->
     <div
         class="m-4 flex flex-col rounded-lg p-6 md:w-5/6 md:flex-row"
-        @cardYanimation
+        @fadeInAnimation
     >
         <!-- image div -->
         <div class="w-4/5 sm:w-3/5 md:w-2/5">
             <img
                 src="../../../../assets/images/image2.jpg"
-                class="rounded-full p-2"
+                class="rounded-full p-2 sm:h-4/6"
             />
         </div>
         <!-- text div -->
-        <div class="my-auto text-justify text-2xl md:w-3/5 md:text-3xl">
-            <h1 class="mt-10 text-text md:mt-40">
+        <div
+            class="my-auto h-5/6 cursor-pointer rounded-3xl bg-primary bg-opacity-10 p-4 text-justify text-2xl shadow-xl sm:h-2/6 md:w-3/5 md:text-3xl"
+        >
+            <h1 class="text-text sm:mt-16">
                 Hey 👋 there am
                 <span class="text-3xl font-extrabold text-accent md:text-5xl">
                     Michael </span
                 >a<span class="text-3xl font-extrabold text-accent md:text-5xl">
-                    frontend developer.</span
-                >My love for technology and design has led me to be software
-                developer.I can't wait to work with you soon.
+                    Frontend Software Engineer</span
+                >. Simple design yield is essential for application.As an engineer for  
             </h1>
             <!-- contact button -->
             <a
                 routerLink="/contact"
-                class="group relative mt-3 inline-flex items-center overflow-hidden rounded-xl bg-primary px-12 py-3 text-2xl font-medium text-text hover:bg-secondary md:text-4xl"
+                class="group relative mt-3 inline-flex items-center overflow-hidden rounded-xl bg-primary px-12 py-3 text-2xl font-medium text-text hover:bg-accent md:text-4xl"
             >
                 <span
-                    class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-secondary opacity-100 transition-all group-hover:top-0 group-hover:h-full"
+                    class="duration-400 ease absolute left-0 top-1/2 block h-0 w-full bg-accent opacity-100 transition-all group-hover:top-0 group-hover:h-full"
                 ></span>
                 <span
                     class="ease absolute right-0 flex h-10 w-10 translate-x-full transform items-center justify-start duration-300 group-hover:translate-x-0"
@@ -55,7 +56,6 @@
         </div>
     </div>
 </div>
-<div class="pt-20">
-    <app-technology-table></app-technology-table>
-</div>
-<app-contacts></app-contacts>
+<app-technology-table />
+
+<app-contacts />

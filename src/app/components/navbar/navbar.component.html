@@ -11,7 +11,7 @@
             ></span>
 
             <span
-                class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+                class="absolute left-0 -translate-x-12 -pl-2 duration-200 ease-out group-hover:translate-x-0"
             >
                 <fa-icon [icon]="faHome"></fa-icon>
             </span>
@@ -29,7 +29,7 @@
             ></span>
 
             <span
-                class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+                class="absolute left-0 -translate-x-12 -pl-2 duration-200 ease-out group-hover:translate-x-0"
             >
                 <fa-icon [icon]="faLaptop"></fa-icon>
             </span>
@@ -47,7 +47,7 @@
             ></span>
 
             <span
-                class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+                class="absolute left-0 -translate-x-12 pl-2 duration-200 ease-out group-hover:translate-x-0"
             >
                 <fa-icon [icon]="faPerson"></fa-icon>
             </span>
@@ -64,12 +64,12 @@
             <a routerLink="/home" class="p-4"> Mike</a>
         </div>
         <div class="dropdown-end dropdown w-1/2 p-4 text-right">
-            <button tabindex="0" class="btn m-1 bg-background text-text">
+            <button tabindex="0" class="btn m-1 bg-accent text-text ">
                 <fa-icon [icon]="faBars"></fa-icon>
             </button>
             <ul
                 tabindex="0"
-                class="dropdown-content menu rounded-box z-[4] w-32 bg-primary p-2 text-accent shadow"
+                class="dropdown-content menu rounded-box z-[4] w-32 bg-accent bg-opacity-30 p-4 text-text shadow mx-4"
             >
                 <li><a routerLink="/home"> Home</a></li>
                 <li><a routerLink="/projects">Project</a></li>
