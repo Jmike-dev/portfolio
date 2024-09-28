@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy:portfolio":"ng build && firebase deploy --project portfolio-1d272 --only hosting:michael-gichuhi-portfolio",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
