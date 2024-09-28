@@ -1,5 +1,24 @@
 {
   "projects": {
     "default": "portfolio-1d272"
+  },
+  "targets": {
+    "portfolio-1d272": {
+      "hosting": {
+        "michael-gichuhi-portfolio": [
+          "michael-gichuhi-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "target": {
+    "portfolio-1d272": {
+      "hosting": {
+        "michael-gichuhi-portfolio": [
+          "michael-gichuhi-portfolio"
+        ]
+      }
+    }
   }
 }
