@@ -5,7 +5,14 @@
     "projects": {
         "portfolio": {
             "projectType": "application",
-            "schematics": {},
+            "schematics": {
+                "@schematics/angular": {
+                    "component": {
+                        "skipTests": true,
+                        "style": "none"
+                    }
+                }
+            },
             "root": "",
             "sourceRoot": "src",
             "prefix": "app",
