@@ -29,7 +29,15 @@ export class ProjectsComponent {
 
     projects: MyProjects[] = [
         {
-            image: '../../../../assets/images/recipeProject.png',
+            image: './assets/images/recessEdTech.png',
+            github: 'https://github.com/recesskenya',
+            liveDemo: 'https://recess.co.ke/',
+            discription:
+                'At recess I assisted them build their website as well as verious application with in the eco-system. The recess tech team decided to use react vite build the app first and used firebase to manage the hosting.  ',
+            title: 'Recess EdTech website',
+        },
+        {
+            image: './assets/images/recipeProject.png',
             github: 'https://github.com/Jmike-dev/hidden_gems.git',
             liveDemo: 'https://food-website-2cb33.web.app/home',
             discription:
@@ -37,7 +45,7 @@ export class ProjectsComponent {
             title: 'Food Website',
         },
         {
-            image: '../../../../assets/images/project2.png',
+            image: './assets/images/project2.png',
             github: 'https://github.com/Jmike-dev/qr-code-generator',
             liveDemo: 'https://qr-code-generator-flax.vercel.app/',
             discription:
