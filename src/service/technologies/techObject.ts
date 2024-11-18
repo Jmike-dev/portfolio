@@ -1,9 +1,6 @@
-export interface Technologies {
-    icon: string;
-    name: string;
-}
+import {  TechnologyModal } from "./index.modal";
 
-export const TechStack: Technologies[] = [
+export const TechStack: TechnologyModal[] = [
     {
         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
         name: 'JavaScript',
@@ -37,3 +34,5 @@ export const TechStack: Technologies[] = [
         name: 'TailwindCSS',
     },
 ];
+export { TechnologyModal };
+

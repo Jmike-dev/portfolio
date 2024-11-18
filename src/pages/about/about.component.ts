@@ -3,7 +3,7 @@ import {
     cardYanimation,
     fadeInAnimation,
 } from 'src/assets/shared-animations/animations';
-import {ContactsComponent} from '../../components/footer/contacts/contacts.component';
+import {ContactsComponent} from '../../layouts/footer/contacts/contacts.component';
 
 @Component({
     selector: 'app-about',
