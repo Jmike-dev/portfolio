@@ -1,5 +1,5 @@
  export interface ProjectModal {
-    image: any;
+    image: string;
     github: string;
     liveDemo: string;
     discription: string;
