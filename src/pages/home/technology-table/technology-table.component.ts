@@ -3,10 +3,10 @@ import {
     cardXanimation,
     cardYanimation,
 } from 'src/assets/shared-animations/animations';
-import {TechStack, Technologies} from 'src/techObject';
+import {TechStack, TechnologyModal} from 'src/service/technologies/techObject';
 import {Router, RouterLink} from '@angular/router';
 import {NgFor} from '@angular/common';
-import {ButtonComponent} from 'src/app/utils/button/button.component';
+import {ButtonComponent} from 'src/components/button/button.component';
 
 @Component({
     selector: 'app-technology-table',
@@ -17,7 +17,7 @@ import {ButtonComponent} from 'src/app/utils/button/button.component';
 })
 export class TechnologyTableComponent {
     constructor(private router: Router) {}
-    techStacks: Technologies[] = TechStack;
+    techStacks: TechnologyModal[] = TechStack;
     projects = '/projects';
     ButtonText = 'My Projects';
     ProjectPage() {

@@ -6,7 +6,7 @@ import {provideRouter, withInMemoryScrolling} from '@angular/router';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {ToastrModule} from 'ngx-toastr';
 import {routes} from './app.routes';
-import {AppRoutingModule} from './app/app-routing.module';
+import {AppRoutingModule} from './app-routing.module';
 
 export const appConfig: ApplicationConfig = {
     providers: [
