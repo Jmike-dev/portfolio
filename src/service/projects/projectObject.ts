@@ -12,7 +12,7 @@ export const projects: ProjectModal[] = [
     {
         image: './assets/images/recipeProject.png',
         github: 'https://github.com/Jmike-dev/hidden_gems.git',
-        liveDemo: 'https://food-website-2cb33.web.app/home',
+        liveDemo: 'https://food-chakula.web.app/home',
         discription:
             'The app was build with Angular, deployed to Firebase and fetches data from the spooncular API.In this app you can easily search for a meal and their recipes.  ',
         title: 'Food Website',
